@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CUSTOMER DETAILS</title>
+</head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+td{color:white;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+</head>
+<body  style="background-image:url('1.jpg');background-repeat:no-repeat;background-size:cover;">
+<h1 style="font-family:Algerian;text-align:center;color:yellow;"><marquee behavior="alternate">BAIRAV AUTO FINANCE</marquee></h1>
+<h3 >
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="insert.html">Insert Customer Details</a></li>
+  <li><a href="viewone.html">View Customer Details</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</h3><br>
+<body>
+<form name="cus" action="CusServlet" method="post">
+<table border=tr>
+<tr>
+<td>Customer ID</td>
+<td><input type="text" name="cusId"></td></tr>
+<tr>
+<td>Enter Password</td>
+<td><input type="password" name="paswrd"></td></tr>
+<tr>
+<td>Confirm Password</td>
+<td><input type="password" name="cpaswrd"></td></tr>
+<tr>
+<td>Customer Name</td>
+<td><input type="text" name="cusName"></td></tr>
+<tr>
+<td>Phone Number</td>
+<td><input type="number" name="cusPno"></td></tr>
+<tr>
+<td>Address</td>
+<td><input type="text" name="cusAdd"></td></tr>
+<tr>
+<td>Area</td>
+<td><select name="cusArea">
+<option value="Erode">Erode</option>
+<option value="Tiruchengode">Tiruchengode</option>
+<option value="Mettur">Mettur</option>
+<option value="Tiruchirapalli">Tiruchirapalli</option>
+<option value="Namakkal">Namakkal</option>
+<option value="Chennai">Chennai</option>
+<option value="Coimbatore">Coimbatore</option>
+<option value="Aathur">Aathur</option>
+</select>
+</td></tr>
+<tr>
+<td>Vehicle Type</td>
+<td><select name="cusVtype">
+<option value="Two">Two</option>
+<option value="Four">Four</option>
+<option value="Heavy">Heavy</option>
+</select>
+</td></tr>
+<tr>
+<td>Vehicle Number</td>
+<td><input type="text" name="cusVno"></td></tr>
+<tr>
+<td>Recomended Id</td>
+<td><input type="text" name="cusRid"></td></tr>
+</table>
+<br>
+<td><input type="submit" value="Submit"/></td>
+<td><input type="reset" value="Clear"/></td>
+</form>
+</body>
+</html>
